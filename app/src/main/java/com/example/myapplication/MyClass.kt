@@ -37,7 +37,12 @@ class MyClass : NewClass() {
 //            }
 
 
+            var name = Pair("A",Pair("B","C"))
 
+            println("First ${name.first}, Second: ${name.second.first}")
+
+            var allval = Triple('A','B','C')
+            println(allval.third)
         }
 
 
