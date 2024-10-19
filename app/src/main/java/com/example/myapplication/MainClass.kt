@@ -1,10 +1,32 @@
 package com.example.myapplication
 
-class MainClass : MyInterface{
+fun main(){
+    MainClass(10).add(10,20)
 
-    override fun add(a: Int, b: Int) {
-        TODO("Not yet implemented")
+    SecondClass()
+}
+
+class MainClass: MyInterface {
+
+     override fun add(a: Int, b: Int) {
+
         println(a+b)
+    }
+    constructor(x: Int){
+        println(x)
     }
 
 }
+
+class SecondClass: NewClass(), MyInterface{
+
+    init {
+        println("Second Class Sagnik Biswas")
+    }
+
+    override fun add(a: Int, b: Int) {
+
+    }
+}
+
+
