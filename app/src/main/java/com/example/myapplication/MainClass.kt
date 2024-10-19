@@ -7,11 +7,13 @@ fun main(){
 
 //    println(employee.ABC)
 
-    for (item in employee.entries){
-        if(item.value){
-            println(item)
-        }
-    }
+//    for (item in employee.entries){
+//        if(item.value){
+//            println(item)
+//        }
+//    }
+
+     GenericsClass<String>("Sagnik Biswas")
 }
 
 class MainClass: MyInterface {
@@ -45,3 +47,11 @@ enum class employee(val value :Boolean =  false){
 }
 
 
+
+open class GenericsClass<T> (newVal:T){
+    val newVal : T
+    init {
+        this.newVal = newVal
+        println("My Name is "+this.newVal)
+    }
+}
