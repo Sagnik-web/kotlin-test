@@ -1,9 +1,17 @@
 package com.example.myapplication
 
 fun main(){
-    MainClass(10).add(10,20)
+//    MainClass(10).add(10,20)
 
-    SecondClass()
+//    SecondClass()
+
+//    println(employee.ABC)
+
+    for (item in employee.entries){
+        if(item.value){
+            println(item)
+        }
+    }
 }
 
 class MainClass: MyInterface {
@@ -27,6 +35,13 @@ class SecondClass: NewClass(), MyInterface{
     override fun add(a: Int, b: Int) {
 
     }
+}
+
+enum class employee(val value :Boolean =  false){
+    ABC(true),
+    DEF,
+    GHI,
+    JKL( true)
 }
 
 
