@@ -7,13 +7,24 @@ fun main(){
 
 //    println(employee.ABC)
 
+
+
 //    for (item in employee.entries){
 //        if(item.value){
 //            println(item)
 //        }
 //    }
 
-     GenericsClass<String>("Sagnik Biswas")
+
+
+//     GenericsClass<String>("Sagnik Biswas")
+
+
+    val Mul :(Int,Float)-> Float = {x,y -> x*y}
+
+
+    println("Multiplication: "+ Mul(10, 15.2F))
+
 }
 
 class MainClass: MyInterface {
